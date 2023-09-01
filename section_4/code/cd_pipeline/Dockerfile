@@ -16,4 +16,4 @@ COPY templates/index.html /usr/src/app/templates/
 EXPOSE 5000
 
 # Run the application
-CMD ["python3", "/usr/src/app/app.py", "--host", "172.17.0.3"]
+CMD ["python3", "/usr/src/app/app.py"]
