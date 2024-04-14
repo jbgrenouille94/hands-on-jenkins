@@ -13,9 +13,9 @@ pipeline {
 
     stages {
 
-		//stage("Test - Unit tests") {
-			//steps { runUnittests() }
-		//}
+		stage("Test - Unit tests") {
+			steps { runUnittests() }
+		}
 
         stage("Build") {
             steps { buildApp() }
@@ -101,7 +101,7 @@ def approve() {
 
 def runUnittests() {
 	sh "pip3 install --no-cache-dir -r ./section_4/code/cd_pipeline/requirements.txt"
-	sh "python3 section_4/code/cd_pipeline/tests/test_flask_app.py"
+	sh "python3 section_4/code/cd_pipeline/test_flask_app.py"
 }
 
 
