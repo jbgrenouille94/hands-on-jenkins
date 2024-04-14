@@ -11,7 +11,7 @@ pipeline {
 		PYTHONPATH = "${WORKSPACE}/section_4/code/cd_pipeline"
 	}
 
-    //stages {
+    stages {
 
 		//stage("Test - Unit tests") {
 			//steps { runUnittests() }
